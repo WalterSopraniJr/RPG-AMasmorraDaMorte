@@ -1,0 +1,8 @@
+C:\Users\walte\source\repos\RPG-MasmorraDaMorte\RPG-MasmorraDaMorte\bin\Debug\RPG-MasmorraDaMorte.exe.config
+C:\Users\walte\source\repos\RPG-MasmorraDaMorte\RPG-MasmorraDaMorte\bin\Debug\RPG-MasmorraDaMorte.exe
+C:\Users\walte\source\repos\RPG-MasmorraDaMorte\RPG-MasmorraDaMorte\bin\Debug\RPG-MasmorraDaMorte.pdb
+C:\Users\walte\source\repos\RPG-MasmorraDaMorte\RPG-MasmorraDaMorte\obj\Debug\Interface.csproj.AssemblyReference.cache
+C:\Users\walte\source\repos\RPG-MasmorraDaMorte\RPG-MasmorraDaMorte\obj\Debug\Interface.csproj.SuggestedBindingRedirects.cache
+C:\Users\walte\source\repos\RPG-MasmorraDaMorte\RPG-MasmorraDaMorte\obj\Debug\Interface.csproj.CoreCompileInputs.cache
+C:\Users\walte\source\repos\RPG-MasmorraDaMorte\RPG-MasmorraDaMorte\obj\Debug\RPG-MasmorraDaMorte.exe
+C:\Users\walte\source\repos\RPG-MasmorraDaMorte\RPG-MasmorraDaMorte\obj\Debug\RPG-MasmorraDaMorte.pdb
