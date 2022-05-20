@@ -18,6 +18,9 @@ public class Textos
         "vai perecer.\n" +
         "   Mas quem será o vencedor?";
 
+    public string fim = ("__________________________________________ \n" +
+        "Fim de jogo. (por enquanto)");
+
     public string introducao = @"O INÍCIO \n \n" +
         "   Localizada na província de Chang Mai, ao norte, Fang era uma cidadezinha \n" +
         "bastante normal. Situada às margens do Rio Kok, era apenas uma parada para \n" +
@@ -35,4 +38,6 @@ public class Textos
         "Liberdade de Chang Mai para sempre.\n " +
         "Entretanto, tornar-se um campeão não é fácil. Alguns anos atrás, um\n" +
         "";
+
+    public string _1 = "o que quiser";
 }
