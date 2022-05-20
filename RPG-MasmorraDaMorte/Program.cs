@@ -10,53 +10,36 @@ namespace RPG_MasmorraDaMorte
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("BEM VINDO À MASMORRA DA MORTE!");
-            Console.WriteLine();
+            Console.WriteLine("BEM VINDO À MASMORRA DA MORTE! \n \n");
+            Console.ReadLine();
 
             Random dado = new Random();
             Textos texto = new Textos();
 
-            Personagem jogador = new Personagem();
-            jogador.nome = "Drako Drachevsky";
-            int energiaTotal = jogador.energia = dado.Next(1,7) + 6;
-            int habilidadeTotal = jogador.habilidade = dado.Next(1,7) + 6;
-            int sorteTotal = jogador.sorte = dado.Next(1,7) + 6;
-
-            Console.WriteLine("__________________________________________");
-            Console.WriteLine("ATRIBUTOS DO PERSONAGEM");
-            Console.WriteLine("Nome do Herói: " + jogador.nome);
-            Console.WriteLine("Energia: " + jogador.energia + "/" + energiaTotal);
-            Console.WriteLine("Habilidade: " + jogador.habilidade + "/" + habilidadeTotal);
-            Console.WriteLine("Sorte: " + jogador.sorte + "/" + sorteTotal);
-            Console.WriteLine("__________________________________________");
-
-
-            Console.WriteLine();
-            Console.WriteLine("Sua jornada começa aqui. Tecle enter para iniciar...");
-            Console.WriteLine();
-
-            Console.WriteLine(texto.intro);
-            Console.WriteLine("__________________________________________");
-            Console.WriteLine(texto.intro);
-            Console.WriteLine("__________________________________________");
-
-            jogador.energia -= 10;
-            jogador.habilidade -= 3;
-            jogador.sorte -= 1;
-
-            Console.WriteLine("__________________________________________");
-            Console.WriteLine("ATRIBUTOS DO PERSONAGEM");
-            Console.WriteLine("Nome do Herói: " + jogador.nome);
-            Console.WriteLine("Energia: " + jogador.energia + "/" + energiaTotal);
-            Console.WriteLine("Habilidade: " + jogador.habilidade + "/" + habilidadeTotal);
-            Console.WriteLine("Sorte: " + jogador.sorte + "/" + sorteTotal);
-            Console.WriteLine("__________________________________________");
+            StatusHeroi();
 
             
 
-            Console.WriteLine("__________________________________________");
-            Console.WriteLine("Fim de jogo. (por enquanto)");
-            Console.Read();
+
+
+
+            Console.WriteLine(texto.fim);
+            Console.WriteLine();
+            Console.ReadLine();
+
+        }
+
+        public static void StatusHeroi()
+        {
+            Personagem jogador = new Personagem("Drako");
+
+            Console.WriteLine("--------HERÓI--------");
+            Console.WriteLine("Nome: " + jogador.Nome);
+            Console.WriteLine("Energia: " + jogador.Energia);
+            Console.WriteLine("Habilidade: " + jogador.Habilidade);
+            Console.WriteLine("Sorte: " + jogador.Sorte);
+            Console.WriteLine("---------------------");
+
 
         }
     }
