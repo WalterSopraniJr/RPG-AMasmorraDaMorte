@@ -14,10 +14,11 @@ public abstract class Status
     {
         int Energia = dado.Next(1, 7) + 6;
         int Habilidade = dado.Next(1, 7) + 6;
-
     }
 
-    
+    public abstract void GeraAtributos();
+
+
 
 
 }
