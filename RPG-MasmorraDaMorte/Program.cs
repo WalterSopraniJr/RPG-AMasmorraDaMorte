@@ -10,25 +10,14 @@ namespace RPG_MasmorraDaMorte
     {
         static void Main(string[] args)
         {
+            Personagem jogador = new Personagem("Drako");
             Random dado = new Random();
             Textos texto = new Textos();
 
             Console.WriteLine("BEM VINDO À MASMORRA DA MORTE! \n \n");
             Console.ReadLine();
 
-            CriaPersonagem();
-
-            StatusHeroi();
-
-            Personagem jogador = new Personagem("Drako");
-
-            Console.WriteLine("--------HERÓI--------");
-            Console.WriteLine("Nome: " + jogador.Nome);
-            Console.WriteLine("Energia: " + jogador.Energia);
-            Console.WriteLine("Habilidade: " + jogador.Habilidade);
-            Console.WriteLine("Sorte: " + jogador.Sorte);
-            Console.WriteLine("---------------------");
-
+            StatusHeroi(jogador);
 
 
 
@@ -38,23 +27,16 @@ namespace RPG_MasmorraDaMorte
 
         }
 
-        public static void CriaPersonagem()
+     
+
+        public static void StatusHeroi(Personagem jogador)
         {
-
-            Personagem jogador = new Personagem("Drako");
-
-
-        }
-
-        public static void StatusHeroi()
-        {
-            Personagem jogador = new Personagem("Drako");
 
             Console.WriteLine("--------HERÓI--------");
             Console.WriteLine("Nome: " + jogador.Nome);
-            Console.WriteLine("Energia: " + jogador.Energia);
-            Console.WriteLine("Habilidade: " + jogador.Habilidade);
-            Console.WriteLine("Sorte: " + jogador.Sorte);
+            Console.WriteLine("Energia: " + jogador.Energia + "/" + jogador.energiaTotal);
+            Console.WriteLine("Habilidade: " + jogador.Habilidade + "/" + jogador.habilidadeTotal);
+            Console.WriteLine("Sorte: " + jogador.Sorte + "/" + jogador.sorteTotal);
             Console.WriteLine("---------------------");
 
         }
