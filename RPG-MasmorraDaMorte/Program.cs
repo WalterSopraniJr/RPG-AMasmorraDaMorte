@@ -16,7 +16,8 @@ namespace RPG_MasmorraDaMorte
             Personagem jogador = new Personagem("Drako");
             
 
-            Console.WriteLine("BEM VINDO À MASMORRA DA MORTE! \n \n");
+            Console.WriteLine("BEM VINDO À MASMORRA DA MORTE! \n");
+            Console.WriteLine(texto.intro);
             Console.WriteLine("MENU\nDigite: R para regras, ou qualquer tecla para iniciar.");
             string opcoes = Console.ReadLine();
             
@@ -29,9 +30,11 @@ namespace RPG_MasmorraDaMorte
             }
 
 
-            //Console.Clear();
+            Console.Clear();
 
             StatusHeroi(jogador);
+
+            Console.WriteLine(texto.introducao);
 
 
 
@@ -46,40 +49,21 @@ namespace RPG_MasmorraDaMorte
             switch (op)
             {
                 case ("1"):
-                    Console.WriteLine("BATALHAS");
+                    Console.WriteLine("\nBATALHAS");
                     Console.ReadLine();
                     break;
                 case ("2"):
-                    Console.WriteLine("CAMINHOS");
+                    Console.WriteLine("\nCAMINHOS");
                     Console.ReadLine();
                     break;
                 case ("3"):
-                    Console.WriteLine("STATUS");
+                    Console.WriteLine("\nSTATUS");
                     Console.ReadLine();
                     break;
 
 
             }
         }
-
-
-            //if (op == "1")
-            //{
-            //    Console.WriteLine("REGRAS");
-            //    Console.ReadLine();
-
-            //}
-            //else if (op == "2")
-            //{
-            //    Console.WriteLine("opcao 2");
-            //    Console.ReadLine();
-            //}
-            //else
-            //{
-            //    Console.WriteLine("Nenhuma opção selecionada");
-            //    Console.ReadLine();
-            //}
-        
 
         public static void StatusHeroi(Personagem jogador)
         {

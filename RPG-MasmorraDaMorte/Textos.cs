@@ -1,7 +1,7 @@
 ﻿
 public class Textos 
 {
-    public string intro = @"   Nas profundezas do sombrio e sinuoso labirinto de " +
+    public string intro = "INTRODUÇÂO \n   Nas profundezas do sombrio e sinuoso labirinto de " +
         "fang, horrores desconhecidos esperam por você. \n" +
         "   Projetado pela diabólica mente do Barão Sukumvit, o labirinto possui " +
         "armadilhas demoníacas e monstros sedentos \nde sangue que testarão suas " +
@@ -16,7 +16,7 @@ public class Textos
         " que se prepararam para o labirinto.\n" +
         "   Apenas um de vocês vai vencer - o resto " +
         "vai perecer.\n" +
-        "   Mas quem será o vencedor?";
+        "   Mas quem será o vencedor? \n";
 
     public string fim = ("__________________________________________ \n" +
         "Fim de jogo. (por enquanto)" + "\nTecle Enter para sair...");
