@@ -10,12 +10,26 @@ namespace RPG_MasmorraDaMorte
     {
         static void Main(string[] args)
         {
-            Personagem jogador = new Personagem("Drako");
             Random dado = new Random();
             Textos texto = new Textos();
 
+            Personagem jogador = new Personagem("Drako");
+            
+
             Console.WriteLine("BEM VINDO À MASMORRA DA MORTE! \n \n");
-            Console.ReadLine();
+            Console.WriteLine("MENU\nDigite: R para regras, ou qualquer tecla para iniciar.");
+            string opcoes = Console.ReadLine();
+            
+
+            if (opcoes == "R" || opcoes == "r")
+            {
+                Console.WriteLine("REGRAS\n" + "Digite:\n 1 - Batalhas\n 2 - Escolhas de caminho\n 3 - Status");
+                string op = Console.ReadLine();
+                Menu(op);
+            }
+
+
+            //Console.Clear();
 
             StatusHeroi(jogador);
 
@@ -27,20 +41,54 @@ namespace RPG_MasmorraDaMorte
 
         }
 
-     
-
-        public static void StatusHeroi(Personagem jogador)
+        public static void Menu(string op)
         {
+            switch (op)
+            {
+                case ("1"):
+                    Console.WriteLine("BATALHAS");
+                    Console.ReadLine();
+                    break;
+                case ("2"):
+                    Console.WriteLine("CAMINHOS");
+                    Console.ReadLine();
+                    break;
+                case ("3"):
+                    Console.WriteLine("STATUS");
+                    Console.ReadLine();
+                    break;
 
-            Console.WriteLine("--------HERÓI--------");
-            Console.WriteLine("Nome: " + jogador.Nome);
-            Console.WriteLine("Energia: " + jogador.Energia + "/" + jogador.energiaTotal);
-            Console.WriteLine("Habilidade: " + jogador.Habilidade + "/" + jogador.habilidadeTotal);
-            Console.WriteLine("Sorte: " + jogador.Sorte + "/" + jogador.sorteTotal);
-            Console.WriteLine("---------------------");
 
+            }
         }
 
 
+            //if (op == "1")
+            //{
+            //    Console.WriteLine("REGRAS");
+            //    Console.ReadLine();
+
+            //}
+            //else if (op == "2")
+            //{
+            //    Console.WriteLine("opcao 2");
+            //    Console.ReadLine();
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Nenhuma opção selecionada");
+            //    Console.ReadLine();
+            //}
+        
+
+        public static void StatusHeroi(Personagem jogador)
+        {
+            Console.WriteLine(
+                "--------HERÓI--------\n" + "Nome: " + jogador.Nome + 
+                "\nEnergia: " + jogador.Energia + "/" + jogador.energiaTotal + 
+                "\nHabilidade: " + jogador.Habilidade + "/" + jogador.habilidadeTotal + 
+                "\nSorte: " + jogador.Sorte + "/" + jogador.sorteTotal + 
+                "\n---------------------");
+        }
     }
 }

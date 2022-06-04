@@ -19,7 +19,7 @@ public class Textos
         "   Mas quem será o vencedor?";
 
     public string fim = ("__________________________________________ \n" +
-        "Fim de jogo. (por enquanto)");
+        "Fim de jogo. (por enquanto)" + "\nTecle Enter para sair...");
 
     public string introducao = @"O INÍCIO \n \n" +
         "   Localizada na província de Chang Mai, ao norte, Fang era uma cidadezinha \n" +
