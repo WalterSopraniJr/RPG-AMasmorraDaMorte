@@ -36,6 +36,7 @@ namespace RPG_MasmorraDaMorte
 
             Console.WriteLine(texto.introducao);
 
+            Console.WriteLine(texto._1);
 
 
             Console.WriteLine(texto.fim);
