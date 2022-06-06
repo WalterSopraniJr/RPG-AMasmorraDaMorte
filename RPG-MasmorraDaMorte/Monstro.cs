@@ -1,26 +1,22 @@
 ﻿using System;
 
-public class Personagem : Status
+public class Monstro : Status
 {
 
     Random dado = new Random();
 
-    public int Sorte { get; protected set; }
-    public int ouro;
+
     public int energiaTotal;
     public int habilidadeTotal;
-    public int sorteTotal;
-    //public string[] joias = {"esmeralda", "diamante"};
 
-    public Personagem(string nome) : base(nome)
+    public Monstro(string nome) : base(nome)
     {
     }
 
     public override void GeraAtributos()
     {
-        energiaTotal = Energia = dado.Next(1, 13) + 6;
-        habilidadeTotal = Habilidade = dado.Next(1, 13) + 6;
-        sorteTotal = Sorte = dado.Next(1, 7);
+        energiaTotal = Energia = dado.Next(1, 13) + 11;
+        habilidadeTotal = Habilidade = dado.Next(1, 13) + 11;
     }
 
 

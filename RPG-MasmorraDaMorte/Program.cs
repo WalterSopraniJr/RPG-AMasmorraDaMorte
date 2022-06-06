@@ -14,29 +14,32 @@ namespace RPG_MasmorraDaMorte
             Textos texto = new Textos();
 
             Personagem jogador = new Personagem("Drako");
+
+            Monstro manticora = new Monstro("Mantícora");
+            StatusMonstro(manticora);
+
+            //Console.WriteLine("BEM VINDO À MASMORRA DA MORTE! \n");
+            //Console.WriteLine(texto.intro);
+            //Console.WriteLine("MENU\nDigite: R para regras, ou qualquer tecla para iniciar.");
+            //string opcoes = Console.ReadLine();
             
 
-            Console.WriteLine("BEM VINDO À MASMORRA DA MORTE! \n");
-            Console.WriteLine(texto.intro);
-            Console.WriteLine("MENU\nDigite: R para regras, ou qualquer tecla para iniciar.");
-            string opcoes = Console.ReadLine();
-            
-
-            if (opcoes == "R" || opcoes == "r")
-            {
-                Console.WriteLine("REGRAS\n" + "Digite:\n 1 - Batalhas\n 2 - Escolhas de caminho\n 3 - Status");
-                string op = Console.ReadLine();
-                Menu(op);
-            }
+            //if (opcoes == "R" || opcoes == "r")
+            //{
+            //    Console.WriteLine("REGRAS\n" + "Digite:\n 1 - Batalhas\n 2 - Escolhas de caminho\n 3 - Status");
+            //    string op = Console.ReadLine();
+            //    Menu(op);
+            //}
 
 
-            Console.Clear();
+            //Console.Clear();
 
-            StatusHeroi(jogador);
+            //StatusHeroi(jogador);
 
-            Console.WriteLine(texto.introducao);
+            //Console.WriteLine(texto.introducao);
 
-            Console.WriteLine(texto._1);
+            //Console.WriteLine(texto._1);
+            //_ = Console.ReadLine();
 
 
             Console.WriteLine(texto.fim);
@@ -74,6 +77,20 @@ namespace RPG_MasmorraDaMorte
                 "\nHabilidade: " + jogador.Habilidade + "/" + jogador.habilidadeTotal + 
                 "\nSorte: " + jogador.Sorte + "/" + jogador.sorteTotal + 
                 "\n---------------------");
+        }
+
+        public static void StatusMonstro(Monstro monstro)
+        {
+            Console.WriteLine(
+                "--------HERÓI--------\n" + "Nome: " + monstro.Nome +
+                "\nEnergia: " + monstro.Energia + "/" + monstro.energiaTotal +
+                "\nHabilidade: " + monstro.Habilidade + "/" + monstro.habilidadeTotal +
+                "\n---------------------");
+        }
+
+        public static void Batalha(Personagem jogador, Monstro monstro)
+        {
+
         }
     }
 }

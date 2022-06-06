@@ -21,7 +21,7 @@ public class Textos
     public string fim = ("__________________________________________ \n" +
         "Fim de jogo. (por enquanto)" + "\nTecle Enter para sair...");
 
-    public string introducao = @"O INÍCIO \n \n" +
+    public string introducao = "O INÍCIO \n \n" +
         "   Localizada na província de Chang Mai, ao norte, Fang era uma cidadezinha \n" +
         "bastante normal. Situada às margens do Rio Kok, era apenas uma parada para \n" +
         "embarcações mercantes e passageiros na maior parte do ano.\n" +
@@ -39,5 +39,53 @@ public class Textos
         "Entretanto, tornar-se um campeão não é fácil. Alguns anos atrás, um\n" +
         "";
 
-    public string _1 = "o que quiser";
+    public string _1 = "O clamor dos animados espectadores vai diminuindo gradualmente às suas costas enquanto você se aventura pela escuridão do túnel cavernoso. Cristais enormes pendem do teto do túnel, irradiando um brilho suave, suficiente apenas para enxergar o caminho à frente. Enquanto seus olhos vão gradualmente acostumando-se com as trevas próximas, você começa a perceber movimento ao seu redor. Aranhas e besouros sobem e descem pelas paredes, desaparecendo rapidamente através de buracos e rachaduras ao sentir sua aproximação; ratos e camundongos correm no caminho à frente. Gotas d'água pingam do teto, formando pequenas pocas com um barulho assustador que ecoa pelo túnel. O ar é gélido, úmido e pesado. Depois de avançar devagar pelo túnel por mais ou menos cinco minutos, você chega a uma mesa de pedra encostada contra a parede à sua esquerda. Sobre ela há seis caixas, uma das quais tem seu nome pintado na tampa. Se quiser abrir a caixa, vá para 270. Se preferir continuar avançando para o norte, vá para 66. ";
+
+    public string _2 = "O escorpião consegue segurá-lo em suas pinças por tempo suficiente para chicotear a cauda segmenta da para frente, por cima da cabeça, e acertá-lo com o ferrão venenoso. O efeito é fatal e você desaba no chão da Arena da Morte, imaginando se Throm será vitorioso. ";
+
+    public string _3 = "";
+
+    public string _4 = "";
+
+    public string _5 = "";
+
+    public string _6 = "";
+    
+    public string _7 = "";
+    
+    public string _8 = "";
+    
+    public string _9 = "";
+
+    public string _10 = "";
+
+    public string _11 = "";
+
+    public string _12 = "";
+
+    public string _13 = "";
+
+    public string _14 = "";
+
+    public string _15 = "";
+
+    public string _16 = "";
+
+    public string _17 = "";
+
+    public string _18 = "";
+
+    public string _19 = "";
+
+    public string _20 = "";
+
+    public string _21 = "";
+
+    public string _22 = "";
+
+    public string _23 = "";
+
+    public string _24 = "";
+
 }
+
